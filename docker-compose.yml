@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  test:
+    image: node:alpine
+    working_dir: /home/app
+    command: npm run test
+    volumes:
+      - ./:/home/app/
+  install:
+    image: node:alpine
+    working_dir: /home/app
+    command: npm install
+    volumes:
+      - ./:/home/app/
