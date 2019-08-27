@@ -1,4 +1,4 @@
-const Promise = require('bluebird');
+const Promise = require('./lib/promise.js');
 const Scraper = require('./lib/scraper.js');
 
 module.exports = (options, callback) => {
